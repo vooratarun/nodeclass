@@ -1,0 +1,40 @@
+﻿Notes
+
+
+
+
+// callback
+
+
+In JavaScript, a callback is a function that is passed as an argument to another function and is executed after the first function completes. It's a way to ensure that certain code runs only after a specific task is finished.
+
+
+.// callback hell
+
+
+Callback hell, also known as the "Pyramid of Doom", is a phenomenon in JavaScript that arises from heavily nested callback functions. It occurs when you need to perform a series of asynchronous operations, where each operation depends on the completion of the previous one.
+
+
+Problems with callback hell:
+* Readability: The code becomes deeply indented and hard to follow.
+* Error handling: Handling errors within nested callbacks is cumbersome.
+* Maintainability: Making changes to the code becomes increasingly difficult.
+
+
+// Promise
+In JavaScript, a Promise is an object that represents the eventual completion or failure of an asynchronous operation. It is a way to handle asynchronous operations in a more structured and readable manner. 
+
+
+// Promise chaining
+Promise chaining in JavaScript is a technique that allows you to chain multiple asynchronous operations together in a sequence. It helps avoid the "callback hell" problem that arises when dealing with nested callbacks for multiple asynchronous tasks.
+
+
+ Async/ Await
+
+
+In JavaScript, async and await are keywords that simplify working with asynchronous operations, specifically promises.
+Here's how they work:
+* async:
+* When you put the async keyword before a function declaration, it makes the function return a promise. This means you can use the .then() and .catch() methods on the function call.
+* await:
+* Inside an async function, you can use the await keyword before a promise-returning function. This pauses the execution of the function until the promise is resolved and returns the fulfilled value. If the promise is rejected, it throws an error that you can catch with a try...catch block.
