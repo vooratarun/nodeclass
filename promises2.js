@@ -41,19 +41,36 @@ function getPostsbyUserId(userId) {
 
 }
 
-const p = getUserByName("ram");
+// const p = getUserByName("ram");
 
-p
-.then(function(userData){
+// p
+// .then(function(userData){
 
-    console.log(userData)
+//     console.log(userData)
 
-    return getPostsbyUserId(userData.userId)
+//     return getPostsbyUserId(userData.userId)
 
-})
-.then(function(posts){
-    console.log(posts)
-})
-.catch(function(err){
-    console.log(err.message)
-}) 
+// })
+// .then(function(posts){
+//     console.log(posts)
+// })
+// .catch(function(err){
+//     console.log(err.message)
+// }) 
+
+async function main(){
+
+    try {
+        let userData = await getUserByName("ram")
+        console.log(userData)
+    
+        let posts = await getPostsbyUserId(2)
+        console.log(posts)
+    } catch(e){
+        console.log(e.message);
+    }
+   
+}
+
+main()
+.then()
