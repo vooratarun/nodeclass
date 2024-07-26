@@ -1,6 +1,8 @@
 ﻿Notes
 
 
+A function in programming is a block of code designed to perform a specific task. Functions are fundamental building blocks in many programming languages, including JavaScript, Python, Java, and many others. They allow you to encapsulate code into reusable units, making your programs more modular, readable, and maintainable.
+
 
 
 // synhronous callback
