@@ -16,6 +16,8 @@ In JavaScript, a callback is a function that is passed as an argument to another
 An asynchronous operation, often referred to as "async operation," is a non-blocking process that allows a program to initiate a task and continue executing other tasks while waiting for the initiated task to complete. 
 This is in contrast to synchronous operations, where the program execution is paused until the operation finishes.
 
+Asynchronous functions allow the program to continue executing other tasks while waiting for the current task to complete. This is achieved through mechanisms like callbacks, promises, and async/await.
+
 // Asyn callback
 An asynchronous callback is a function that is passed as an argument to another function and is executed after the completion of an asynchronous operation. Unlike synchronous callbacks, which are executed immediately after the current operation, asynchronous callbacks are invoked after a certain event, such as a data fetch, a timer, or an I/O operation, has completed. This allows the program to continue executing other code while waiting for the asynchronous operation to finish.
 
