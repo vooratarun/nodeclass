@@ -3,14 +3,21 @@
 
 
 
-// callback
+// synhronous callback
 
 
-In JavaScript, a callback is a function that is passed as an argument to another function and is executed after the first function completes. It's a way to ensure that certain code runs only after a specific task is finished.
+In JavaScript, a callback is a function that is passed as an argument to another function and is executed after the first function completes.
+ It's a way to ensure that certain code runs only after a specific task is finished.
 
+
+// async function
+An asynchronous operation, often referred to as "async operation," is a non-blocking process that allows a program to initiate a task and continue executing other tasks while waiting for the initiated task to complete. 
+This is in contrast to synchronous operations, where the program execution is paused until the operation finishes.
+
+// Asyn callback
+An asynchronous callback is a function that is passed as an argument to another function and is executed after the completion of an asynchronous operation. Unlike synchronous callbacks, which are executed immediately after the current operation, asynchronous callbacks are invoked after a certain event, such as a data fetch, a timer, or an I/O operation, has completed. This allows the program to continue executing other code while waiting for the asynchronous operation to finish.
 
 .// callback hell
-
 
 Callback hell, also known as the "Pyramid of Doom", is a phenomenon in JavaScript that arises from heavily nested callback functions. It occurs when you need to perform a series of asynchronous operations, where each operation depends on the completion of the previous one.
 

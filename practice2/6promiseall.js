@@ -15,6 +15,20 @@ const fetchFromSource2 = () => {
     });
 };
 
+async function promiseall() {
+    try {
+        const [data1, data2] = await Promise.all([fetchFromSource1(), fetchFromSource2()]);
+        console.log('data1:',data1);
+        console.log("data2", data2)
+
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+// promiseall();
+
+
 async function fetchFirstData() {
     try {
         const result = await Promise.race([fetchFromSource1(), fetchFromSource2()]);
